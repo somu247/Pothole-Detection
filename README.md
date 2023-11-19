@@ -12,7 +12,7 @@ The google colab file link for yolov8 segmentation and tracking is provided belo
 <h2>Clone the repository</h2>
 
 ```
-!git clone https://github.com/mounishvatti/pothole_detection_yolov8.git
+!git clone https://github.com/somu247/pothole_detection_yolov8.git
 ```
 <h2>Goto the cloned folder</h2>
 
