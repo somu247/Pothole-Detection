@@ -1,0 +1,125 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pothole Detection</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-left">
+                <a href="#" class="logo">Pothole Detection</a>
+            </div>
+            <div class="navbar-right">
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#pred">Predictions</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="home-container" id="home">
+        <div class="home-centered">
+            <h1 class="home-project-name">Pothole Detection using Yolo3 Fine-tuned Model</h1>
+            <a href="#pred"><button class="home-prediction-btn">Prediction</button></a>
+        </div>
+    </div>
+
+    <div id="about"></div>
+    <div class="about-container" >
+        <div class="about-content">
+            <h2 class="about-section-title">Who We Are</h2>
+            <p class="about-description">
+                Welcome to PotholeDetect, where innovation meets road safety! We are on a mission to revolutionize pothole detection using cutting-edge YOLO technology.
+
+Our team of tech enthusiasts is dedicated to creating a safer and smoother driving experience for all. Join us in paving the way to a pothole-free future!
+
+At PotholeDetect, we believe in harnessing the power of AI to tackle road maintenance challenges head-on. Let's drive towards a pothole-free world together!
+            </p>
+            <div class="about-card-container">
+                <div class="about-card">
+                    <h2>100K+</h2>
+                    <h3>Images Analyzed</h3>
+                </div>
+                <div class="about-card">
+                    <h2>50K+</h2>
+                    <h3>Videos Processed</h3>
+                </div>
+                <div class="about-card">
+                    <h2>24/7</h2>
+                    <h3>Real-time Detection</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="sub-container">
+        <div class="sub-content">
+            <div class="sub-text">
+                <h2 class="sub-section-title">Revolutionize Road Safety with Cutting-Edge Innovation</h2>
+                <p class="sub-description">
+                    Welcome to the ultimate solution for detecting potholes using state-of-the-art YOLO technology. Say goodbye to bumpy rides and hello to smooth journeys!
+
+                    Our template features a sleek navigation bar with easy access to essential sections like About and Contact Us. Dive into the world of pothole detection like never before!
+                    
+                    Embrace the power of visual recognition with a captivating background picture showcasing the magic of YOLO in action. Get ready to witness the future of road maintenance right before your eyes.
+                </p>
+            </div>
+            <div class="sub-image-container">
+                <img src="{% static 'phs.jpg' %}" alt="Image" class="sub-image" id="animatedImage">
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="faq">
+            <h1>Curious Minds Ask</h1>
+            <div class="question">
+                <h3>How does YOLO technology work <i class="fas fa-question-circle"></i> </h3>
+                <div class="answer">YOLO (You Only Look Once) is a cutting-edge object detection algorithm that processes images in real-time, making it perfect for pothole detection.</div>
+            </div>
+            <div class="question">
+                <h3>Is pothole detection accurate with YOLO <i class="fas fa-question-circle"></i> </h3>
+                <div class="answer">Absolutely! YOLO's precision and speed ensure accurate identification of potholes, enhancing road safety significantly.</div>
+            </div>
+            <div class="question">
+                <h3>Can I integrate YOLO into my project <i class="fas fa-question-circle"></i> </h3>
+                <div class="answer">Yes, YOLO is versatile and can be seamlessly integrated into various projects, including pothole detection systems.</div>
+            </div>
+            <div class="question">
+                <h3>What makes YOLO stand out from others<i class="fas fa-question-circle"></i> </h3>
+                <div class="answer">YOLO stands out for its efficiency and speed, providing real-time results that are unmatched in the industry.</div>
+            </div>
+            <div class="question">
+                <h3>Is YOLO suitable for all environments <i class="fas fa-question-circle"></i> </h3>
+                <div class="answer">YOLO's adaptability makes it suitable for diverse environments, ensuring reliable performance in different conditions.</div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="pred-container" id="pred">
+        <h1 class="pred-title">Detection</h1>
+        <a href="detection" class="pred-btn">Detect</a>
+        <!-- Your prediction content goes here -->
+    </div>
+
+
+    <script src="{% static 'script.js' %}"></script>
+</body>
+</html>
